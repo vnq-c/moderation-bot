@@ -3,7 +3,7 @@ import { join } from 'path';
 
 const config: BotConfig = {
     token: process.env.DISCORD_TOKEN || '',
-    clientId: 'ID',                  // client id
+    clientId: process.env.CLIENT_ID || '',
     mongoUri: 'mongodb+',           // mongo uri
     defaultPrefix: '!',
     mainGuildId: 'ID',             // main guild id
