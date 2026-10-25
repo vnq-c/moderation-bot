@@ -4,7 +4,7 @@ import { join } from 'path';
 const config: BotConfig = {
     token: process.env.DISCORD_TOKEN || '',
     clientId: process.env.CLIENT_ID || '',
-    mongoUri: 'mongodb+',           // mongo uri
+    mongoUri: process.env.MONGO_URI || '',
     defaultPrefix: '!',
     mainGuildId: 'ID',             // main guild id
     defaultLanguage: 'en',        // default language
