@@ -6,7 +6,7 @@ const config: BotConfig = {
     clientId: process.env.CLIENT_ID || '',
     mongoUri: process.env.MONGO_URI || '',
     defaultPrefix: '!',
-    mainGuildId: 'ID',             // main guild id
+    mainGuildId: process.env.MAIN_GUILD_ID || '',
     defaultLanguage: 'en',        // default language
     dashboard: {
         port: 3000,             // port for dashboard
