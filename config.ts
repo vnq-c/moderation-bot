@@ -8,10 +8,10 @@ const config: BotConfig = {
     defaultPrefix: '!',
     mainGuildId: process.env.MAIN_GUILD_ID || '',
     defaultLanguage: 'en',        // default language
-    dashboard: {
-        port: 3000,             // port for dashboard
-        secret: 'wickstudio',  // secret key
-        callbackUrl: 'http://localhost:3000/auth/callback' // callback url
+   dashboard: {
+    port: Number(process.env.PORT || 3000),
+secret: process.env.DASHBOARD_SECRET || '',
+callbackUrl: 'https://bot-mory.fadehost.app/auth/callback'
     }
 };
 
