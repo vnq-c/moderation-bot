@@ -2,7 +2,7 @@ import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 const config: BotConfig = {
-    token: 'TOKEN',                   // token
+    token: process.env.DISCORD_TOKEN || '',
     clientId: 'ID',                  // client id
     mongoUri: 'mongodb+',           // mongo uri
     defaultPrefix: '!',
